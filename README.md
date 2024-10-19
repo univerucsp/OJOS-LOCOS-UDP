@@ -24,15 +24,15 @@ Abre Unity y selecciona Add project from disk para agregar el proyecto clonado.
 ### 3. Configuración de Python
 Antes de ejecutar el programa, asegúrate de instalar las dependencias necesarias para Python:
 
-#### 1. Dirígete a la carpeta Python del proyecto:
+1. Dirígete a la carpeta Python del proyecto:
 ```bash
 cd OJOS-LOCOS-UDP/Python
 ```
-#### 2. Instala los paquetes necesarios:
+ 2. Instala los paquetes necesarios:
 ```bash
 pip install -r requirements.txt
 ```
-#### 3. Instalar módulos adicionales:
+3. Instalar módulos adicionales:
 ```bash
 pip install pyaudio vosk
 ```
