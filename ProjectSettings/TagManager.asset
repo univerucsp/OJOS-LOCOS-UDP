@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Objetivo
+  - redDot
+  - circle
+  - plane
+  - Light
+  - Fade
   layers:
   - Default
   - TransparentFX

@@ -44,11 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f68592670a9cc413b75a186571bdf2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serverIP: 127.0.0.1
-  serverPort: 65432
-  redDot: {fileID: 0}
-  circle: {fileID: 0}
-  plane: {fileID: 0}
+  listenPort: 65432
+  redDot: {fileID: 2567247273019872397, guid: fff529d3f2c91179d9964b3b356511ee, type: 3}
+  circle: {fileID: 1733809781704244093, guid: 24662827469cb265eb24207fca1a006f, type: 3}
+  plane: {fileID: 7245313692676492474, guid: 4e02282ae018993549865ae354f0d5df, type: 3}
   circleRadius: 0.5
   planeWidth: 5
   planeHeight: 5
+  warningSound: {fileID: 0}
+  pointSound: {fileID: 0}
+  scoreText: {fileID: 0}

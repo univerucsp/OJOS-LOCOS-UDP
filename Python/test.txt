@@ -1,0 +1,60 @@
+import cv2
+from gaze_tracking import GazeTracking
+
+gaze = GazeTracking()
+webcam = cv2.VideoCapture(0)
+
+while True:
+    # Capturar un nuevo frame desde la webcam
+    _, frame = webcam.read()
+
+    # Enviar este frame a GazeTracking para analizarlo
+    gaze.refresh(frame)
+
+    frame = gaze.annotated_frame()
+    text = ""
+
+    # Evaluar la dirección de la mirada
+    if gaze.is_blinking():
+        text = "Blinking"
+    elif gaze.is_right():
+        text = "Looking right"
+    elif gaze.is_left():
+        text = "Looking left"
+    elif gaze.is_center():
+        text = "Looking center"
+
+    # Obtener las coordenadas de las pupilas
+    left_pupil = gaze.pupil_left_coords()
+    right_pupil = gaze.pupil_right_coords()
+
+    # Determinar la posición vertical promedio de las pupilas
+    if left_pupil and right_pupil:
+        avg_pupil_y = (left_pupil[1] + right_pupil[1]) / 2
+        
+        # Determinar la dirección de la mirada según la posición y
+        if 215 <= avg_pupil_y < 220:
+            vertical_text = "Looking Up"
+        elif 220 <= avg_pupil_y < 225:
+            vertical_text = "Looking Middle"
+        elif avg_pupil_y >= 225:
+            vertical_text = "Looking Down"
+        else:
+            vertical_text = "Unknown Position"
+    else:
+        vertical_text = "No pupils detected"
+
+    # Agregar texto en el frame
+    cv2.putText(frame, text, (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (0, 0, 255), 2)
+    cv2.putText(frame, vertical_text, (90, 100), cv2.FONT_HERSHEY_DUPLEX, 1.2, (0, 0, 255), 2)
+    cv2.putText(frame, "Left pupil:  " + str(left_pupil), (90, 130), cv2.FONT_HERSHEY_DUPLEX, 0.9, (0, 0, 255), 1)
+    cv2.putText(frame, "Right pupil: " + str(right_pupil), (90, 165), cv2.FONT_HERSHEY_DUPLEX, 0.9, (0, 0, 255), 1)
+
+    cv2.imshow("Demo", frame)
+
+    if cv2.waitKey(1) == 27:  # Presionar 'ESC' para salir
+        break
+
+webcam.release()
+cv2.destroyAllWindows()
+

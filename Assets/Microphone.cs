@@ -25,7 +25,7 @@ public class MicrophoneInput : MonoBehaviour
         float noiseLevel = sum / sampleSize;
 
         // Usa el nivel de ruido como desees
-        Debug.Log("Nivel de Ruido: " + noiseLevel);
+        //Debug.Log("Nivel de Ruido: " + noiseLevel);
     }
 
     void OnApplicationQuit()
