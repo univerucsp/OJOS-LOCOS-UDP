@@ -8,7 +8,9 @@ Este proyecto utiliza un sistema de reconocimiento de voz para controlar un jueg
 - Mariana Cáceres Urquizo
 
 ## Video de demostración
-Mira el video de demostración para ver cómo funciona el proyecto: [OJOS-LOCOS-UDP - Resultados](https://youtu.be/kGCL-5tiIUY).
+Mira el video de demostración para ver cómo funciona el proyecto:
+
+[![OJOS-LOCOS-UDP - Resultados](https://img.youtube.com/vi/kGCL-5tiIUY/0.jpg)](https://youtu.be/kGCL-5tiIUY)
 
 ## Instrucciones para la configuración
 
