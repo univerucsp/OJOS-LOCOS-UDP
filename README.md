@@ -1,6 +1,7 @@
 # OJOS-LOCOS-UDP
 
-Este proyecto utiliza un sistema de reconocimiento de voz para controlar un juego en Unity a través de mensajes UDP. La aplicación escucha comandos de voz como "play", "calibrate", "quit" y "back" para interactuar con el juego. El sistema está integrado con Unity y utiliza un script en Python para enviar los comandos reconocidos.
+Este proyecto desarrolla un videojuego que permite la interacción a través del seguimiento ocular y el reconocimiento de voz, inspirado en el popular juego Osu!. Los jugadores controlan una esfera roja utilizando sus ojos para colisionar con esferas blancas, acumulando puntos. Utilizando tecnologías como GazeTracking y Vosk, el sistema ofrece una experiencia accesible y entretenida sin requerir dispositivos de control tradicionales. Las pruebas realizadas han confirmado la funcionalidad del sistema en diversas condiciones, fomentando la inclusión de usuarios con diferentes habilidades.
+
 
 ## Integrantes del grupo
 - Marco Antonio Guillén Dávila
