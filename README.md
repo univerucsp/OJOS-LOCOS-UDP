@@ -28,3 +28,21 @@ Antes de ejecutar el programa, asegúrate de instalar las dependencias necesaria
 ```bash
 cd OJOS-LOCOS-UDP/Python
 ```
+#### 2. Instala los paquetes necesarios:
+```bash
+pip install -r requirements.txt
+```
+#### 3. Instalar módulos adicionales:
+```bash
+pip install pyaudio vosk
+```
+
+### 4. Ejecución del proyecto
+1. Ejecuta los siguientes scripts de Python en la carpeta Python:
+```bash
+python test.py
+python audio.py
+```
+2. Luego, abre Unity y ejecuta el juego para comenzar a interactuar mediante comandos de voz.
+3. (Opcional) Si deseas hacer un build del proyecto para otra plataforma, asegúrate de que los scripts de Python test.py y audio.py estén en ejecución antes de iniciar el juego.
+
