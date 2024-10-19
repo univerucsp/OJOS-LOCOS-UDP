@@ -8,8 +8,8 @@ Este proyecto desarrolla un videojuego que permite la interacción a través del
 - Anthony Mamani Mamani
 - Mariana Cáceres Urquizo
 
-## Video de demostración
-Mira el video de demostración para ver cómo funciona el proyecto:
+## Video de demostración y resultados
+Mira el video de demostración para ver cómo funciona el proyecto y los resultados obtenidos:
 
 [![OJOS-LOCOS-UDP - Resultados](https://img.youtube.com/vi/kGCL-5tiIUY/0.jpg)](https://youtu.be/kGCL-5tiIUY)
 
